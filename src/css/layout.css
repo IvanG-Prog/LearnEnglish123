@@ -1,0 +1,9 @@
+body {
+  font-family: 'Inter', sans-serif; /* Esto le da ese look tecnológico */
+  margin: 0;
+  background-color: #0f172a; /* Un azul casi negro, muy usado en modo oscuro moderno */
+}
+
+h1 {
+  color: #2c3e50;
+}

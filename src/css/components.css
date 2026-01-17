@@ -1,0 +1,162 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%; /* Mucho espacio a los lados */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Degradado moderno */
+  color: white;
+  min-height: 60vh;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h2 {
+  font-size: 3.5rem; /* Título gigante y audaz */
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9; /* Texto un poco más suave que el título */
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #00d1b2; /* Color turquesa moderno */
+  color: white;
+  padding: 15px 35px;
+  border-radius: 50px; /* Botón totalmente redondeado (píldora) */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  transition: transform 0.3s ease; /* Animación suave */
+  box-shadow: 0 0 20px rgba(0, 209, 178, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Movimiento más natural */
+}
+
+
+.btn-primary:hover {
+  transform: translateY(-3px); /* Se eleva un poquito */
+  box-shadow: 0 10px 25px rgba(0, 209, 178, 0.5); /* El brillo aumenta */
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px 10%;
+}
+
+.course-card {
+  background: #1e293b; /* Azul oscuro elegante */
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde casi invisible */
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  border-color: #00d1b2; /* Brilla al pasar el mouse */
+  transform: translateY(-10px);
+}
+
+.badge {
+  background: rgba(0, 209, 178, 0.2);
+  color: #00d1b2;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.course-card h3 {
+  color: white;
+  margin: 10px 0;
+}
+
+.course-card p {
+  color: #94a3b8; /* Gris suave para lectura */
+  font-size: 0.95rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #0f172a; /* Mismo color del fondo para que sea minimalista */
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #00d1b2; /* El toque de color en el "123" */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.nav-links li:hover {
+  opacity: 1;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-visual {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sphere {
+  width: 280px;
+  height: 280px;
+  background: #00d1b2; /* Color sólido de base */
+  background: radial-gradient(circle, #00d1b2 0%, #764ba2 100%); 
+  
+  /* ESTO ES LO QUE HACE LA ESFERA */
+  border-radius: 999px; /* Un número muy alto garantiza que sea redonda */
+  overflow: hidden;    /* Corta cualquier cosa que se salga del círculo */
+  
+  /* ESTO DA EL EFECTO MODERNO */
+  filter: blur(30px); 
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Esta es la lógica del movimiento (como una función de tiempo) */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
