@@ -1,16 +1,42 @@
-# React + Vite
+# 🚀 LearnEnglish123 - Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an educational project developed with **React** and **Vite**. The platform offers a modern and fluid experience for English learners, using a modular component architecture and “Glassmorphism” design (glass effect).
 
-Currently, two official plugins are available:
+## 🛠️ Technologies used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React 18** - UI library.
+* **Vite** - Ultra-fast build tool.
+* **React Router Dom** - For navigation between pages (Home, Methodology).
+* **Modern CSS** - Modular styles and custom animations.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 How to get the project up and running
 
-## Expanding the ESLint configuration
+If you have just cloned the project or are returning after a while, follow these steps:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Install dependencies
+The first time (or if you delete the `node_modules` folder), you need to download the libraries:
+```bash
+npm install```
+
+###2. Run the development server
+To view the page in your browser and have the changes update automatically:
+```bash
+npm run dev```
+
+Note: Once it runs, open the address that appears in the terminal (usually http://localhost:5173).
+
+###3. Create a production version
+If you want to generate files ready to upload to a real server:
+```bash
+npm run build```
+
+##📁 Project Structure
+To keep things organized, the project is divided as follows:
+
+src/components/: Contains the .jsx and .css files for each part of the website (Navbar, Hero, CourseCard, Methodology).
+
+src/css/layout.css: Contains global styles, the fo
+
+Translated with DeepL.com (free version)

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'; // Importamos el componente de navegación
 import './Navbar.css';
+
 function Navbar() {
   return (
     <nav className="navbar">
@@ -11,8 +12,8 @@ function Navbar() {
       </div>
 
       <ul className="nav-links">
-        {/* "Cursos" ahora también nos lleva al inicio donde están las cards */}
-        <li><Link to="/">Cursos</Link></li>
+        {/* CORREGIDO: "Cursos" ahora te lleva a la ruta /cursos */}
+        <li><Link to="/cursos">Cursos</Link></li>
         
         {/* "Metodología" nos lleva a la nueva ruta que creamos en App.jsx */}
         <li><Link to="/metodologia">Metodología</Link></li>

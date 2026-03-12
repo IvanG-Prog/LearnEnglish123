@@ -1,0 +1,96 @@
+.cursos-container {
+  padding: 120px 10% 80px;
+  min-height: 100vh;
+  color: white;
+}
+
+.cursos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cursos-header h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.cursos-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.curso-card-premium {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 24px;
+  position: relative;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.curso-card-premium:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #00d1b2;
+}
+
+.card-tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #00d1b2;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-number {
+  font-size: 3rem;
+  font-weight: 900;
+  opacity: 0.1;
+  margin-bottom: -20px;
+}
+
+.curso-card-premium h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.modules-badge {
+  display: inline-block;
+  background: rgba(0, 209, 178, 0.15);
+  color: #00d1b2;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+}
+
+.curso-card-premium p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.btn-details {
+  margin-top: 25px;
+  background: transparent;
+  border: 1px solid #00d1b2;
+  color: #00d1b2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-details:hover {
+  background: #00d1b2;
+  color: #0f172a;
+}

@@ -1,14 +1,15 @@
-import { Routes, Route } from 'react-router-dom' // Importamos las herramientas de rutas
+import { Routes, Route } from 'react-router-dom' 
 import './css/layout.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CourseCard from './components/CourseCard'
 import Metodologia from './components/Metodologia' 
+import Cursos from './components/Cursos'
 
 function App() {
   return (
     <div className="main-container">
-      {/* Elementos decorativos de fondo (Se mantienen en todas las rutas) */}
+      {/* Fondo y decoraciones */}
       <div className="shape-blob"></div>
       
       <div className="floating-icons-container">
@@ -18,13 +19,11 @@ function App() {
          <span className="floating-icon icon-4">💬</span>
       </div>
 
-      {/* La Navbar siempre se ve */}
       <Navbar /> 
 
-      {/* Definimos qué se ve en cada ruta */}
       <Routes>
-        {/* RUTA PRINCIPAL: Hero + Cursos */}
-        <Route path="/" element={
+        {/* Usamos exact path="/" para que el Hero SOLO se vea en el inicio */}
+        <Route exact path="/" element={
           <>
             <Hero />
             <section className="course-grid">
@@ -35,8 +34,9 @@ function App() {
           </>
         } />
 
-        {/* RUTA DE METODOLOGÍA: Solo muestra el componente Metodologia */}
+        {/* Rutas limpias para las otras páginas */}
         <Route path="/metodologia" element={<Metodologia />} />
+        <Route path="/cursos" element={<Cursos />} />
       </Routes>
     </div>
   )
