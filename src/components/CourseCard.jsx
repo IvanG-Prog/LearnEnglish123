@@ -1,3 +1,5 @@
+import './CourseCard.css' // <-- Agregamos esta línea para que sepa cómo vestirse
+
 function CourseCard({ title, level }) {
   return (
     <div className="course-card">
